@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="Campsite_Management.Main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+       <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampingAPP</title>
+    <link rel="icon" href="images/Design.jpeg" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- SweetAlert CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <!-- SweetAlert JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark/dark.css">
+
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+
+       <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f0fdff;">
+           <!-- #f7f0df -->
+           <a class="navbar-brand" href="/HomePage.aspx" style="color: #a7c8fc; font-size: 40px; margin-left: 10px; font-family: 'Brush Script MT' , cursive;">
+               <img src="/images/Design.jpeg" width="70px" height="70px" style="border-radius: 35%;" alt="">
+               CampingAPP
+           </a>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+           </button>
+
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav mr-auto">
+                   <li class="nav-item">
+                       <a class="nav-link" href="/Management.aspx">Management</a>
+                   </li>
+
+                   <li class="nav-item">
+                       <a class="nav-link" href="/Contact.aspx">Contact</a>
+                   </li>
+
+
+               </ul>
+           </div>
+       </nav>
+   </header>
+
+
+   <div>
+       <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+       </asp:ContentPlaceHolder>
+   </div>
+
+</body>
+</html>
